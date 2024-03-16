@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./загружено.jfif" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>EarthquakeInfo</title>
+</head>
+<body style="background: black;">
+    <header>
+        <h1><a href="#Z">Землетрясение </a> <a href="#W">Понимание</a> 
+        <a href="#P">Предотвращение </a>  <a href="">Последствия</a></h1>
+    </header>
+    <main id="Z">
+        <h2 style="color: aliceblue;"> Недавние Землетрясение в течени <span style="color: antiquewhite;"> 1</span> - <span style="color: antiquewhite;"> 2</span> <h3 style="color: azure;">недели</h3></h2>
+
+    </main>
+   <div class="btns">
+    <button class="l"><</button>
+    <button class="r">></button>
+   </div>
+    <div class="main-f">
+        <div class="slider">
+            <div class="bloks">
+                <img src="
+                data:image/png;base64,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
+                " alt="">
+                <p>
+                    M 5,4<br>
+                    21 km SW of <br>
+                    Pluzine<br>
+                    Montengro
+                </p>
+                <span>
+                    14 Maр., 08:06
+                </span>
+            </div>
+            <div class="bloks">
+                <img src="
+                data:image/png;base64,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
+                " alt="">
+                <p>
+                    М 5, 2 <br>
+                    59 км от пункта <br>
+                    Папуа-Нова <br> 
+                    Гвинея <br>
+                </p>
+                <span>
+                    16 Map., 08:32
+                </span>
+            </div>
+            <div class="bloks">
+                <img src="
+                data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIgAAABUCAMAAABumI80AAAACXBIWXMAAAAcAAAAHAAPAbmPAAAAdVBMVEVaz+Sn5syQ4NRs1dm77Nih5chl0uaQ4L5qu8zxqqV52OnU8PWMiJHQKiKs5vB5p7T8+/p3q7mN3ezZMCVknq6uUVLgVEv41dPA6/L38uldw9dmwtTy69tzsb/la2O/OzhtbXfpgHmYc3ry+flhq7x/CgooKi3AQsORAAAC7UlEQVR42u39h2KzIBSFATDcauLWzDbj/Z+xosW4SKAByj9Od3ubfL3jAHaBwOqEAiIHTIUthCxr1+l4PO52ffA8TI4wsqCNGR90CGhIQXoMawPEVXBFPf0K7W8SaxAG4voE7wtZU8Gf3IgMENpGVOjlJzjLnEkBARDSZHBWBi5i5IAg2KNAIpsDxGpJnEnnyQFxepKOA/HMLol3J8B8U8MhjIhgxmchCNouAgYI2fZstqRlREwYzttVTo8Iy4HzwsgEcXArjh4hIfY8TmpGXLvtwZdRmIzLglcqCLZ5/N1117xXLogLX9sqoQ2W75Y7Na772lVhu6kAqoVf56PlgGtWptlHEHMR0OsjiL0WaQXBZFlc57hrBSHTvb7U7fUmBDJ34cUeaBRZATAwWcUv7QHm8n5pCzDX3hAO8Km1UdkypUFM0f4OzJApDfJpSkIiYIhMmZjClMoYYyF6Vv+Dd0q32/TkHZghOlzVayGoUo8RpB7kMMLoUNazohzE2y60nhTFIKftik5rkWpBvO2qVnKi1kcOW4aWfaI2ISkLJF2EKvWRR2GiMo7jjzJiF0fp1AwJKeO8U3xlpkQlyNAhZU71IJl3iUoQWpmoy0fldyQRszZAmaiHfHTJONfdi/L7nQsvUQhCW6RvkEvSvfhgNIlKHxlVpjof/dqvqyqPaZPMglUOzQPk7Pt1fUkuvs8GUegj6bhX28qcu25llUZXs1a7/Gmz6hjfa9+s+dPx1WxoQ0KWy54ei6fGOnCsrHpAnR6L3vUjJqves0VP6X5kvA2IotEbehMitjFSe64R2Cqasnk25jhhzAELmHLk1HM5gOcQ/v/6yEyFIdcUzbnq/B9kob8HpNkETrBpwluTvXMzQj6SbcY/UuA0IfnGbZgMeodFKCHtXQ0kGQEgJCMQwtKy/khCPkLuKNtswvbZrb/fMAimIJQlCwV/bFNoahJe3ZokEaySGpBxDTmlDGQj+hO1ikDEUZSBCKKI+MgXiCZVsSUPdIEAAAAASUVORK5CYII=
+                " alt="">
+                <p>
+                    M 5,5<br>
+                    1541 km от пункта <br>
+                    Инверкрагил<br>
+                    Новая- Зеландия<br>
+                </p>
+                <span>
+                    16 Map., 05:14
+                </span>
+            </div>
+            <div class="bloks">
+                <img src="
+                data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIgAAABUCAMAAABumI80AAAACXBIWXMAAAAcAAAAHAAPAbmPAAAAV1BMVEVy1OiglaCriZGPrbuemaV+xdaVpbJ4zd+mj5iJtcSEvc17yduxfoPqhX/xqqWynIf41dO6bnC/UFDDQkDhVk2pipK8Y2TQKiPZMCW1c3b///+PrORne6r9iCfnAAACvElEQVR42u3913akMAxAAbibTp36/x+6pi64zJgcmeGBm930JPdIstx4QBcXFxcXp0LymAqsECJOUvQjEsrwFpFIdDSpYTG7oCPhAjthx6nIDxpHqsT4KxSFJ2XYA8ZRYLiXhyJwehLsTdD07PAIaqLq4xQmOz0wjlEY9nqEqliB9xNiIoz/4IEFAkfaExPdJiK7CXxy6EcNpwtDwEiHBsmylyLLiEMFOiTUpkEGiZnexTQBDom0eWw0BhWbCWxIYh8PuwnswGFeHnYTyHVsqv9yh4fVBDI3ia/HYKJ9M2RutDET3cjyh+uJ5RPECAlgboQusgSkvrcPRXuv3SEBXDZqv/l2Wzzax3Pg0SwmRpXAFUmqB4QsHs+Z/yZGbuCWJVwXmTPTDPHo8sFkzo6RG7iVmktkCkheDW9alwjcsIl1kSkg97FA8veYnNpRJHDTjSbS1+owYnuRrqsK9dJ1bhGMoNBFyNQ5lEheFFWVv9UbVSRHR4RkUwMbU6Myk2up2X4/XI1sO3xZZlMjrcdBM5bIEcXKNxpltvTVZizWpzZ8D+gjkfIgZFmZrRraEpCQDQ1tAqL+0KrFz421dbd4wLlmNftGhETrSa95DJNec8ykt6rWKIr6AfxaqO+KT8sAyOWzXOcGb9YBOkapwh4K6PveT0tF7Vsx6CmWvorfsXiG3dgYq2f/7QTwcY3wMbFusIDPF83TIs8tJ/j5FS2xRUXbhGMT8GuCojRNtscSke1YAv5ArygsIkN/GyUcBzXw9yZxXuL9BDjh5H/xCHCE1kP3erBQF1o7TVi4Wz56Eo9dJizsrSc9iYe3SaDxsibxuRsI0D+qSv+M/BqUIDd60pLrLxd7R9xxzrhvoFmo2yIXqS1BjAa/ZrWR0E1cxG8sJlKexD38Zw9tXFxcnBZ5lsaQHvv4lBt+8DNl/wCsqlz1E7gqJAAAAABJRU5ErkJggg==
+                " alt="">
+                <p>
+                    M 5,6<br>
+                    22 km от пункта <br>
+                    Кикай , Кагосима,<br>
+                    Япония<br>
+                </p>
+                <span>
+                    15 Map., 15:32
+                </span>
+            </div>
+            <div class="bloks">
+                <img src="
+                data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIgAAABUCAMAAABumI80AAAACXBIWXMAAAAcAAAAHAAPAbmPAAAAQlBMVEVg0OXf3Nb59e58rLpwvM2RkI7pgHl+qLXxqqXgUknA6OvZMCXFw76zS0xqxdeadXurqqbQKiKH2uhqbnN/CgooKi3OZ25JAAABYUlEQVR42u39WW+FIBhEAbCDu97//2NLtAjd6YJj0jkPd9XkZOZT4U0QQgghhBBCCCGEEEII+X/MRmvvtTazQGKiREIbgWIuNHYVUCrGvwESyjseEJN3PQAms/+Aq+dEfySixaXkYuy0RSYLKucMZNmGnW2BRHJOyDQkssmVU5KasXseXdhNLKAb/SIQJ/e3CdBNEjkGxKmjHIBI0UznVJBBdt0p4sV1ZBEXgpROxTeIiC5nNTbjUNW8GNbuGBHIsKbLdzmGdYBdvu/c0AbIDS3f4pPJlor5s2YefV9xVH7oLW0eemYdR1lzYLkMsLb48keBmLFSpPXCqFeRqiPbLhUfqlqk6eL58KgUabid6NW3RJptsJ7zkLb+lDZbzhSI+s5JLTbh6iciLbiLSH8TkYe6h0jhARUpPaAieUDkihTJgawrNJEzkFFCq8mBSOyMxAm5xbAWlww2EWMzWJFX1TwBgDsZmzTCJlMAAAAASUVORK5CYII=
+                " alt="">
+                <p>
+                    M 6,0<br>
+                    1725 km от пункта <br>
+                    Португалия<br>
+                </p>
+                <span>
+                    15 Map., 02:10
+                </span>
+            </div>
+            <div class="bloks">
+                <img src="
+                https://www.google.com/maps/vt/data=2Fg92sYWYLwloEE7nEa8fbtalBMedBAdiMQecSXieBYrNq1thSXwwEUjTI7kJdznuUurLCymXnrtzawCjR6qpNOTu8jC81OyZ4melEZTKMxop1G56LXXc7sZUvY16pmFOUidDOZClBjji-CeEJAvrKCfrxuw1BnsjzMMJp2nGSbwLlaVkJ13JdAMyR_EyQ?w=136&h=84
+                " alt="">
+                <p>
+                    M 5,6<br>
+                    23 km от пункта <br>
+                    Иваки , Фукусима<br>
+                    Япония<br>
+                </p>
+                <span>
+                    14 Map., 20:14
+                </span>
+            </div>
+            <div class="bloks">
+                <img src="
+                https://www.google.com/maps/vt/data=OMVviZtGunm-ttAuBiyEFEOUVY2L4VK-3QKh0sJa6zj59COtK8GiLPJJ6MESWfPNKVpUnHbQT0KnaUdkQE6xlMYjqwhkeA0nfB67548sdkwwp31CdKr4NMrLh2l3MXUMv_EZXHv6xSG-CmhFC8ZG88_oFlUsghvU8ifF-tydG1_-t598YFwxVE96Jwjk_Q?w=136&h=84
+                " alt="">
+                <p>
+                    M 5,5<br>
+                    1935 km от пункта <br>
+                    Аделааида Южный Австралия<br>
+                    Австралия<br>
+                </p>
+                <span>
+                    14 Map., 01:06
+                </span>
+            </div>
+            <div class="bloks">
+                <img src="
+                https://www.google.com/maps/vt/data=9s4LVuVc8MfkqI0l6i_bWl71Bzz0w8szV9eb9IcSqYk61go0PnQ4YlVhVG1LBQowoYzGL_6PEc8b1BH27PI6fHue6DEmXqAT4mHLvVGw4MQqjg-iEbOACHSkbJ4hGQzC1tggzoKUHxNmrJy6V4iIU6cEFalzuqNQSUqYd2T9doWFLfoj530JrFNG-XRk-g?w=136&h=84
+                " alt="">
+                <p>
+                    M 5,8<br>
+                    136 km от пункта <br>
+                    Kotamobagu city, Северный Сулавеси<br>
+                    Индонезия<br>
+                </p>
+                <span>
+                    13 Map., 23:56
+                </span>
+            </div>
+            <div class="bloks">
+                <img src="
+                https://www.google.com/maps/vt/data=Srmc4tsrbG4tPCkFNcXe7OGdGinz4wxTFbtqZOXOTxhTzOY2-EBfUXLngFjSQj9lLNfcuUCr6_ChN5fWyIyy3jSLXBCndCcO7ukXzueSDM2FZfsOVIALkPi4KVMGJyJjYK3f37W9t0pzclOdKmeVgEnsO_dvtr72tMpSY89PnusQAm68MpROvBqk_nldZQ?w=136&h=84
+                " alt="">
+                <p>
+                    M 6,0<br>
+                    20 km от пункта <br>
+                    Папуа-Нова<br>
+                    Гвинея<br>
+                </p>
+                <span>
+                    13 Map., 20:13
+                </span>
+            </div>
+            <div class="bloks">
+                <img src="
+                https://www.google.com/maps/vt/data=OV1-5S9IT2Tw3GMmg0oVJfhnDOdtodyQtulou_-Gb9_TITLF7GnRPcM_yGUhc_SRX1WgmKuhVjd0zUKamo458wDmVxCgYnc_-2fZQECHB2OTKXl-ks5_Ygtv53r-3VjK390kYvcvrP_mRsdwhZxCdAivSwODSniutJQgi9GrFBCQsZwKzVMOcs1oKPnYdg?w=136&h=84
+                " alt="">
+                <p>
+                    M 5,3<br>
+                    104 km от пункта <br>
+                    Арика , Чили<br>
+                </p>
+                <span>
+                    13 Map., 14:30
+                </span>
+            </div>
+            <div class="bloks">
+                <img src="
+                https://www.google.com/maps/vt/data=mvXxxImxnyvGGnhMzpQJ3XybeQiC5sIujefd6J2q559sLG1abtGjS00qe3VPpZ8nnrMZiYmkxF4CIcNH-dVaPLSPdS7WkL1Mw35I0Ua6zgUL9Korwrog2yztD5H9BMVsv4YUmziyzOzGS5I9b_P8oZHJajtH0X-M0Riqk4bo1MsgPM-AkJ2Hq8WK0SmEVQ?w=136&h=84
+                " alt="">
+                <p>
+                    M 5,2<br>
+                    92 km от пункта <br>
+                    Pomio , Папуа-Нова<br>
+                    Гвинея<br>
+                </p>
+                <span>
+                    10 Map., 17:35
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="waring-div" id="W">
+        <h1>
+            Важно!
+        </h1>
+
+        <p>
+            Поимите что во время землетресение не надо паникавать.<br>
+            Но во время землетресение надо обезапасит своих близких и родных.
+        </p>
+        <div class="images">
+            <img src="./images.jfif" alt="">
+            <img src="./images (1).jfif" alt="">
+            <img src="./images (2).jfif" alt="">
+        </div>
+    </div>
+    <div class="anti-div" id="P">
+        <h1>
+            Предотврашение
+        </h1>
+        <ul>
+            <li>Найдите надежное укрытие, например под столом, между рамкам двери</li>
+            <li>Берите за собой нужные и ценые веши, Обезятелные веши одеало,авариные сумки,документы,гаджеты, кошелок и мелочи(если есть время на мелочи)</li>
+            <li>Выходите из дома или квартиры безопасным путём</li>
+            <li>Будте бдителные , не потеряте своих близких и родных</li>
+            <li>Не паникуите и помогите другим жителям</li>
+        </ul>
+        <div class="images">
+            <img src="./загружено (1).jfif" alt="">
+            <img src="./images (3).jfif" alt="">
+            <img src="./images (4).jfif" alt="">
+        </div>
+    </div>   
+    
+    <div class="anti-div" id="S">
+
+        <h1>
+            Последствия
+        </h1>
+        <ul>
+            <li>Если вы паникуите то, потеряте связ со  своих близких и родных из-за паники</li>
+            <li>Не приближатесь на весячих обьектов, например люстра, открытые верхних шкафов, роекторы, и кондицанеры. А то трамвируитес</li>
+            <li>Не косаитес отрытых проводов. А то током вас ударит</li>
+        </ul>
+        <div class="images">
+            <img src="./images (5).jfif" alt="">
+            <img src="./images (6).jfif" alt="">
+            <img src="./загружено (2).jfif" alt="">
+        </div>
+    </div> 
+    <footer>
+        <div class="main-footer">
+          <div class="footer-info">
+            <div class="link-Newleter">
+              <div class="links-item-input">
+                <div>
+                  <h1>TengerNews</h1>
+                  <div class="links-item">
+                    <div>
+                      <span>Ссылки</span>
+                      <ul>
+                        <li><a href="https://tengrinews.kz/page/contact/">Контакт</a></li>
+                        <li><a href="https://tengrinews.kz/page/about/">О нас</a></li>
+                        <li><a href="https://tengrinews.kz/politic/">Условия эксплуатации</a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <span>О землетресение</span>
+                      <ul>
+                        <li><a href="#Z">Землетрясение</a></li>
+                        <li><a href="#W">Понимание</a></li>
+                        <li><a href="#P">Предотвращение</a></li>
+                        <li><a href="#S">Последствия</a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <span>Условия</span>
+                      <ul>
+                        <li><a href="https://tengrinews.kz/page/confidential/">политика конфиденциальности</a></li>
+                      </ul>
+                    </div>
+                    <div>
+                        <span>Социялные сети</span>
+                        <ul style="display: flex; gap: 15px;">
+                          <li><a href="https://www.instagram.com/tengrinewskz/"><img style="height: 40px; width: 40px;" src="./загружено (3).jfif" alt=""></a></li>
+                          <li><a href="https://telegram.me/tengrinews/"><img style="height: 40px; width: 40px;" src="./telega.jfif" alt=""></a></li>
+                          <li><a href="https://vk.com/tengrinews"><img style="height: 40px; width: 40px;" src="./vk.png" alt=""></a></li>
+                          <li><a href="https://www.facebook.com/Tengrinews.kz/"><img style="height: 40px; width: 40px;" src="./facebok.png" alt=""></a></li>
+                          <li><a href="https://twitter.com/tengrinewskz"><img style="height: 40px; width: 40px;" src="./XT.png" alt=""></a></li>
+                          <li><a href="https://www.youtube.com/@TengrinewsTVKZ"><img style="height: 40px; width: 40px;" src="./youtobe.png" alt=""></a></li>
+                          <li><a href="https://www.tiktok.com/@tengrinewskz"><img style="height: 40px; width: 40px;" src="./tt.png" alt=""></a></li>
+                          <li><a href="https://www.whatsapp.com/channel/0029VaC8d1M3AzNVm4DlYk2H"><img style="height: 40px; width: 40px;" src="./watsap.jfif" alt=""></a></li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="line-footer"></div>
+            <div class="pay-item">
+              <span>All Rights Reserved - TengerNews</span>
+              <span>Terms & Conditions . Privacy Policy</span>
+            </div>
+          </div>
+        </div>
+      </footer>  
+    <script src="./script.js"></script>
+</body>
+</html>
